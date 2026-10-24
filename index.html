@@ -2,123 +2,468 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Elsayed Amer — CV</title>
-<meta name="description" content="Elsayed Amer — Operations Manager, Gas Compression Services. Petroleum & Natural Gas Engineer and Training Consultant, Saudi Arabia.">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Elsayed Amer Hassan</title>
+<meta name="description" content="Eng. Elsayed Amer Hassan – Operations Manager, Senior Petroleum & Process Engineer and Oil & Gas Training Consultant. Biography, experience, publications and certificates.">
+<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-:root{--bg:#f6f7f9;--card:#fff;--ink:#16202b;--muted:#5b6672;--line:#e3e7ec;--accent:#0b6e4f;--accent-soft:#e6f3ee}
-@media (prefers-color-scheme:dark){:root{--bg:#0f1418;--card:#161d23;--ink:#e7ecef;--muted:#9aa6b0;--line:#26313a;--accent:#3fbf8f;--accent-soft:#16302a}}
+/* Layout: engineering title-block hero, then a single reading column with full-width bands for figures, timeline and the certificate register. */
+:root{
+  --ink:#13202d; --paper:#f6f8fa; --panel:#ffffff; --line:#d5dde6; --muted:#5a6878;
+  --steel:#1f4f7a; --steel-soft:#e4edf5; --flare:#b5711c; --band:#13202d; --band-fg:#eef3f8;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Source Sans 3","Segoe UI",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+  --radius:6px; --maxw:1120px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --ink:#e6edf4; --paper:#0f1720; --panel:#16212d; --line:#2a3848; --muted:#9aa9b9;
+  --steel:#7fb1de; --steel-soft:#1b2c3d; --flare:#e0a24f; --band:#0a1118; --band-fg:#e6edf4; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --ink:#e6edf4; --paper:#0f1720; --panel:#16212d; --line:#2a3848; --muted:#9aa9b9;
+  --steel:#7fb1de; --steel-soft:#1b2c3d; --flare:#e0a24f; --band:#0a1118; --band-fg:#e6edf4; color-scheme:dark}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 Inter,system-ui,sans-serif}
-.wrap{max-width:900px;margin:0 auto;padding:40px 16px 60px}
-header{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:32px;margin-bottom:20px}
-h1{margin:0;font-size:32px;letter-spacing:-.02em}
-.role{color:var(--accent);font-weight:600;margin:4px 0 12px}
-.contact{display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--muted);font-size:14px}
-.contact a{color:inherit}
-a{color:var(--accent)}
-section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px 32px;margin-bottom:20px}
-h2{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin:0 0 14px}
-.tags{display:flex;flex-wrap:wrap;gap:8px}
-.tag{background:var(--accent-soft);color:var(--accent);padding:5px 11px;border-radius:999px;font-size:13px;font-weight:500}
-.job{border-left:3px solid var(--accent);padding-left:16px;margin-bottom:18px}
-.job:last-child{margin-bottom:0}
-.job h3{margin:0;font-size:16px}
-.job .org{color:var(--muted);font-size:14px}
-ul{margin:8px 0 0;padding-left:18px}
-li{margin:3px 0}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.grid section{margin-bottom:0}
-@media (max-width:680px){.grid{grid-template-columns:1fr}header,section{padding:22px 18px}h1{font-size:26px}}
-@media print{body{background:#fff}header,section{border:none;padding:10px 0}}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--band)}
+a{color:var(--steel)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--flare);outline-offset:2px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.1;margin:0}
+h2{font-size:clamp(30px,4vw,40px);font-weight:700;letter-spacing:.01em}
+h3{font-size:22px;font-weight:600}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--flare)}
+.muted{color:var(--muted)}
+section{padding-block:64px;scroll-margin-top:calc(env(safe-area-inset-top,0px) + 56px)}
+section+section{border-top:1px solid var(--line)}
+.sec-head{display:flex;flex-direction:column;gap:8px;margin-bottom:28px}
+.lead{max-width:68ch}
+
+/* nav */
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--band);color:var(--band-fg)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px}
+.brand{font-family:var(--display);font-weight:700;font-size:21px;letter-spacing:.03em;color:var(--band-fg);text-decoration:none;white-space:nowrap}
+.navlinks{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.navlinks::-webkit-scrollbar{display:none}
+.navlinks a{color:var(--band-fg);opacity:.82;text-decoration:none;font-size:14px;padding:8px 10px;border-radius:4px;white-space:nowrap}
+.navlinks a:hover{opacity:1;background:rgba(255,255,255,.08)}
+
+/* hero */
+.hero{padding-block:48px 56px;background:var(--band);color:var(--band-fg);border-top:0}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:40px;align-items:start}
+.hero h1{font-size:clamp(44px,7vw,80px);font-weight:700;letter-spacing:.005em}
+.hero .role{font-family:var(--display);font-size:clamp(20px,2.6vw,26px);font-weight:500;color:var(--flare);margin-top:10px}
+.hero p{max-width:60ch;color:var(--band-fg);opacity:.9;margin:20px 0 0}
+.hero .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;font:600 15px var(--body);padding:10px 16px;border-radius:var(--radius);border:1px solid transparent;cursor:pointer;text-decoration:none}
+.btn.primary{background:var(--flare);color:#14100a}
+.btn.ghost{border-color:rgba(238,243,248,.35);color:var(--band-fg);background:transparent}
+.portrait{display:flex;flex-direction:column;gap:14px}
+.portrait img{width:100%;max-width:340px;aspect-ratio:3/4;object-fit:cover;object-position:top;border-radius:var(--radius);border:1px solid rgba(238,243,248,.2)}
+/* title block: borrowed from an engineering drawing */
+.titleblock{border:1px solid rgba(238,243,248,.35);font-family:var(--mono);font-size:12px;max-width:340px;display:grid;grid-template-columns:1fr 1fr}
+.titleblock div{padding:7px 9px;border-right:1px solid rgba(238,243,248,.2);border-bottom:1px solid rgba(238,243,248,.2);min-width:0}
+.titleblock div:nth-child(2n){border-right:0}
+.titleblock div:nth-last-child(-n+2){border-bottom:0}
+.titleblock span{display:block;opacity:.6;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+.titleblock b{font-weight:500;font-size:13px}
+
+/* figures */
+.figs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:36px}
+.fig{background:var(--panel);padding:20px 16px;display:flex;flex-direction:column;gap:4px}
+.fig b{font-family:var(--display);font-size:42px;font-weight:700;color:var(--steel);line-height:1;font-variant-numeric:tabular-nums}
+.fig span{font-size:14px;color:var(--muted)}
+
+/* bio */
+.bio{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:48px}
+.bio p{margin:0 0 16px;max-width:68ch}
+.facts{display:flex;flex-direction:column;gap:14px;font-size:15px}
+.facts div{display:flex;flex-direction:column;border-bottom:1px solid var(--line);padding-bottom:10px}
+.facts span{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.achv{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:36px}
+.achv article{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px;display:flex;flex-direction:column;gap:6px}
+.achv .k{font-family:var(--display);font-size:24px;font-weight:700;color:var(--flare)}
+.achv p{margin:0;font-size:15.5px}
+
+/* timeline */
+.timeline{display:flex;flex-direction:column}
+.job{display:grid;grid-template-columns:170px minmax(0,1fr);gap:24px;padding:22px 0;border-bottom:1px solid var(--line)}
+.job:first-child{padding-top:0}
+.job .when{font-family:var(--mono);font-size:13px;color:var(--steel);padding-top:4px;font-variant-numeric:tabular-nums}
+.job h3{font-size:24px}
+.job .org{color:var(--muted);font-size:15px;margin:2px 0 8px}
+.job ul{margin:0;padding-left:20px}
+.job li{margin:3px 0}
+.side-roles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:28px}
+.side-roles div{border-left:3px solid var(--steel);padding:4px 0 4px 14px}
+.side-roles b{display:block;font-size:16px}
+.side-roles small{font-family:var(--mono);color:var(--muted);font-size:12px}
+
+/* expertise */
+.skills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.skill{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.skill h3{font-size:20px;margin-bottom:10px;color:var(--steel)}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags span{font-size:13.5px;background:var(--steel-soft);color:var(--ink);padding:3px 9px;border-radius:3px}
+
+/* training */
+.train{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px}
+.course-table{width:100%;border-collapse:collapse;font-size:15px}
+.course-table th{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:left;padding:8px 6px;border-bottom:1px solid var(--line)}
+.course-table td{padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+.course-table td.n{font-family:var(--mono);text-align:right;color:var(--steel);font-variant-numeric:tabular-nums;white-space:nowrap}
+.tablebox{overflow-x:auto}
+.cats{display:flex;flex-direction:column;gap:14px}
+.cats div b{display:block;font-family:var(--display);font-size:19px;color:var(--steel)}
+.cats div p{margin:2px 0 0;font-size:15px}
+
+/* publications */
+.pubs{display:flex;flex-direction:column;gap:14px;counter-reset:p}
+.pub{display:grid;grid-template-columns:150px minmax(0,1fr);gap:20px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px}
+.pub .id{font-family:var(--mono);font-size:13px;color:var(--flare)}
+.pub .id small{display:block;color:var(--muted)}
+.pub h3{font-family:var(--body);font-size:17px;font-weight:700;line-height:1.35}
+.pub p{margin:6px 0 0;font-size:14.5px;color:var(--muted)}
+
+/* certificates */
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:20px}
+.chip{font:600 14px var(--body);padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--steel);border-color:var(--steel);color:var(--panel)}
+.search{flex:1 1 220px;min-width:0;font:15px var(--body);padding:9px 12px;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);color:var(--ink)}
+.count{font-family:var(--mono);font-size:13px;color:var(--muted);margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;cursor:pointer;text-align:left;padding:0;font:inherit;color:inherit}
+.card:hover{border-color:var(--steel)}
+.card .thumb{aspect-ratio:4/3;background:var(--steel-soft);display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+.card .thumb img{max-width:100%;max-height:100%;object-fit:contain}
+.card .multi{position:absolute;right:8px;bottom:8px;font-family:var(--mono);font-size:11px;background:var(--band);color:var(--band-fg);padding:2px 7px;border-radius:3px}
+.card .meta{padding:12px 14px 14px;display:flex;flex-direction:column;gap:4px}
+.card .code{font-family:var(--mono);font-size:12px;color:var(--flare)}
+.card .t{font-weight:700;font-size:15px;line-height:1.3;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card .i{font-size:13px;color:var(--muted)}
+.group-title{grid-column:1/-1;font-family:var(--display);font-size:22px;font-weight:600;margin-top:12px;color:var(--steel)}
+.group-title small{display:block;font-family:var(--body);font-size:14px;font-weight:400;color:var(--muted)}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(8,12,18,.94);display:flex;flex-direction:column;padding:calc(env(safe-area-inset-top,0px) + 12px) max(16px,env(safe-area-inset-right,0px)) calc(env(safe-area-inset-bottom,0px) + 12px) max(16px,env(safe-area-inset-left,0px));color:#eef3f8}
+.lb-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.lb-top .code{font-family:var(--mono);color:#e0a24f;font-size:13px}
+.lb-top h3{font-family:var(--body);font-size:18px;font-weight:700;margin-top:2px}
+.lb-top p{margin:2px 0 0;font-size:14px;opacity:.75}
+.lb-stage{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;gap:12px;margin-top:12px}
+.lb-stage img{max-width:100%;max-height:100%;object-fit:contain;background:#fff;border-radius:3px}
+.lb-btn{background:rgba(255,255,255,.1);color:#eef3f8;border:1px solid rgba(255,255,255,.2);border-radius:var(--radius);font:600 14px var(--body);padding:9px 14px;cursor:pointer;flex:none}
+.lb-btn:hover{background:rgba(255,255,255,.18)}
+.lb-foot{display:flex;justify-content:center;align-items:center;gap:12px;margin-top:10px;font-family:var(--mono);font-size:13px}
+
+/* education + contact */
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px}
+.list{display:flex;flex-direction:column;gap:14px}
+.list div{border-left:3px solid var(--steel);padding:2px 0 2px 14px}
+.list b{display:block}
+.list small{color:var(--muted);font-size:14px}
+.contact-band{background:var(--band);color:var(--band-fg);border-top:0}
+.contact-band .muted{color:var(--band-fg);opacity:.7}
+.contacts{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px;align-items:start}
+.crow{display:grid;grid-template-columns:120px minmax(0,1fr) auto;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid rgba(238,243,248,.15)}
+.crow span{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;opacity:.65}
+.crow a,.crow b{color:var(--band-fg);font-weight:600;overflow-wrap:anywhere}
+.copy{font:600 13px var(--body);background:transparent;border:1px solid rgba(238,243,248,.3);color:var(--band-fg);padding:5px 10px;border-radius:4px;cursor:pointer}
+.qrs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.qr{display:flex;flex-direction:column;align-items:center;gap:8px;font-size:13px;text-align:center}
+.qr img{width:100%;max-width:150px;background:#fff;padding:8px;border-radius:var(--radius)}
+footer{padding-block:24px;font-size:13px;color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 20px);transform:translateX(-50%);background:var(--flare);color:#14100a;font-weight:700;padding:8px 14px;border-radius:var(--radius);z-index:60}
+
+@media (max-width:900px){
+  .hero-grid,.bio,.train,.two,.contacts{grid-template-columns:minmax(0,1fr)}
+  .figs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .skills{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:620px){
+  body{font-size:16px}
+  section{padding-block:44px}
+  .achv,.side-roles,.skills{grid-template-columns:minmax(0,1fr)}
+  .job,.pub{grid-template-columns:minmax(0,1fr);gap:6px}
+  .crow{grid-template-columns:minmax(0,1fr) auto}
+  .crow span{grid-column:1/-1}
+  .brand{font-size:18px}
+  .lb-stage .lb-btn{display:none}
+}
 </style>
 </head>
-<body>
-<div class="wrap">
-<header>
-  <h1>Elsayed Amer</h1>
-  <div class="role">Operations Manager – Gas Compression Services · Petroleum &amp; Natural Gas Engineer · Training Consultant</div>
-  <div class="contact">
-    <span>Al-Khobar / Dammam, Saudi Arabia</span>
-    <a href="mailto:sayed.amer.add@gmail.com">sayed.amer.add@gmail.com</a>
-    <a href="https://linkedin.com/in/sayed-amer">linkedin.com/in/sayed-amer</a>
-    <a href="https://github.com/sayedamer-PGX">github.com/sayedamer-PGX</a>
+<body style="margin:0">
+
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">E. AMER HASSAN</a>
+    <nav class="navlinks" aria-label="Sections">
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#expertise">Expertise</a><a href="#training">Training</a><a href="#publications">Publications</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a>
+    </nav>
   </div>
 </header>
 
-<section>
-  <h2>Profile</h2>
-  <p>Petroleum and natural gas engineer with 13+ years of upstream and downstream experience across Saudi Arabia, the UAE and Egypt. Leads mobile and portable gas compression services — wellhead compression, zero-flaring, well revival and early production facility operations — for national oil companies in the GCC. Accountable for the full project lifecycle: engineering, commissioning, field operations, HSE and technical reporting, with a multidisciplinary team of about 20 engineers, managers, technicians and operators. Published SPE author, university adjunct professor and independent training consultant.</p>
-</section>
-
-<section>
-  <h2>Core Expertise</h2>
-  <div class="tags">
-    <span class="tag">Wellhead Gas Compression</span><span class="tag">Reciprocating &amp; Screw Compressor Packages</span>
-    <span class="tag">Zero-Flaring &amp; Pipeline Degassing</span><span class="tag">Well Revival / Ultra-Low WHP Compression</span>
-    <span class="tag">Early Production Facilities</span><span class="tag">Sour Service – NACE MR0175 / ISO 15156</span>
-    <span class="tag">Saudi Aramco SAES / GI Compliance</span><span class="tag">Commissioning &amp; Start-up</span>
-    <span class="tag">Field Operations Management</span><span class="tag">Contracts &amp; Budget Control</span>
-    <span class="tag">Technical Reporting</span><span class="tag">Technical Training Delivery</span>
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Upstream Oil &amp; Gas · Saudi Arabia</div>
+      <h1>Eng. Elsayed Amer Hassan</h1>
+      <div class="role">Operations Manager · Senior Petroleum &amp; Process Engineer · Oil &amp; Gas Training Consultant</div>
+      <p>I lead gas compression, wellhead services and early production operations for Saudi Aramco, and I teach the engineers and operators who run them. My work is restoring production from wells others have written off, safely and without flaring.</p>
+      <div class="cta">
+        <a class="btn primary" href="#certificates">View certificates</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/sayed-amer" target="_blank" rel="noopener">LinkedIn profile</a>
+        <a class="btn ghost" href="Elsayed-Amer-Hassan-Portfolio.pdf" target="_blank" rel="noopener">Portfolio (PDF)</a>
+        <a class="btn ghost" href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <img src="photo.jpg" alt="Portrait of Eng. Elsayed Amer Hassan">
+      <div class="titleblock" aria-label="Professional registration summary">
+        <div><span>Discipline</span><b>Petroleum Eng.</b></div>
+        <div><span>Experience</span><b>14+ years</b></div>
+        <div><span>SCE Reg. No.</span><b>851699</b></div>
+        <div><span>SPE Member</span><b>4081183</b></div>
+        <div><span>Base</span><b>Dammam, KSA</b></div>
+        <div><span>Clients</span><b>Aramco · ADNOC</b></div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section>
-  <h2>Professional Experience</h2>
-  <div class="job">
-    <h3>Operations Manager – Gas Compression Services</h3>
-    <div class="org">Petrogistix Petroleum &amp; Energy Logistics and Services Co. · KSA / UAE · Current</div>
-    <ul>
-      <li>Lead mobile and portable gas compression operations for wellhead compression, zero-flaring and EPF scopes.</li>
-      <li>Own engineering, commissioning, field execution and end-of-well / technical reporting across the project lifecycle.</li>
-      <li>Led a 120-day ultra-low wellhead pressure compression pilot that sustained flow at very low flowing wellhead pressure; results co-published with SPE.</li>
-      <li>Manage multi-million-dollar service contracts and project budgets; lead a team of ~20.</li>
-      <li>Authored field operations SOPs, sour-service equipment design packages and technical proposals for GCC operators.</li>
-    </ul>
-  </div>
-  <div class="job">
-    <h3>Ben Jabr Group</h3>
-    <div class="org">UAE</div>
-  </div>
-  <div class="job">
-    <h3>Wintershall Dea</h3>
-    <div class="org">Egypt</div>
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head"><div class="eyebrow">Biography</div><h2>About</h2></div>
+    <div class="bio">
+      <div>
+        <p>Elsayed Amer Hassan is a petroleum and natural gas engineer with more than fourteen years in upstream oil and gas across Saudi Arabia, the United Arab Emirates and Egypt. He is Operations Manager for Gas Compression Services at Petrogistix Petroleum &amp; Energy Logistics and Services Co. in Al Khobar, where he leads a team of about twenty senior engineers, engineers, department managers, technicians and operators delivering wellhead compression, well services and early production facilities for Saudi Aramco.</p>
+        <p>His career runs through the whole production chain. He began as a field engineer with Weatherford Drilling International on rigs in Egypt's Western Desert, moved into natural gas processing with Suez Oil Company (SUCO), where he worked on gas receiving, separation, glycol dehydration, refrigeration and low-temperature separation, and then into well intervention on gas and condensate wells, leading coiled tubing, nitrogen lifting, acid stimulation, wireline and recompletion work. His last position in the Egyptian petroleum sector was Production Process Section Head in the General Operations Administration.</p>
+        <p>At Petrogistix he moved from senior petroleum engineer to operations manager, first for ADNOC onshore wellhead services in Abu Dhabi and then for gas compression services in Saudi Arabia. His teams engineered and commissioned Saudi Aramco's first ultra-low-pressure wellhead compression system at Haradh GOSP-4, a sour gas well flowing below 25 psig, recovering 5 MMSCFD of gas and 500 barrels per day of condensate. For ADNOC they restored more than fifteen wells to 4,000 barrels of oil per day and 3 MMSCFD through zero-flaring separation, mobile compression and reinforced thermoplastic pipe export.</p>
+        <p>Alongside operations, Elsayed has worked as an independent oil and gas training consultant since 2015 and has delivered more than 2,000 hours of technical training in Egypt, the UAE, Saudi Arabia, Iraq, Oman and Turkey. He taught natural gas processing at Al-Azhar University, has led workshops for SPE and IADC student chapters, and writes about what he builds: four conference papers at GOTECH and URTeC between 2025 and 2026 on liquid loading, surface jet pumps, mobile wellhead compression and machine learning for compressor performance.</p>
+        <p>He is a registered engineer with the Saudi Council of Engineers, a member of the Society of Petroleum Engineers, and is completing an MBA at UTAMED in Spain and CMI Level 7 studies in strategic management.</p>
+      </div>
+      <aside class="facts" aria-label="Key facts">
+        <div><span>Current role</span>Operations Manager – Gas Compression Services, Petrogistix</div>
+        <div><span>Location</span>Dammam / Al Khobar, Eastern Province, Saudi Arabia</div>
+        <div><span>Education</span>B.Sc. Natural Gas Engineering, Port Said University (2012)</div>
+        <div><span>Registration</span>Saudi Council of Engineers – Engineer, Petroleum Engineering (No. 851699)</div>
+        <div><span>Languages</span>Arabic (native) · English (full professional) · French (elementary)</div>
+      </aside>
+    </div>
+    <div class="figs" role="list" aria-label="Key figures">
+      <div class="fig" role="listitem"><b>14+</b><span>Years in oil &amp; gas</span></div>
+      <div class="fig" role="listitem"><b>20</b><span>Team members led</span></div>
+      <div class="fig" role="listitem"><b>2,000+</b><span>Training hours delivered</span></div>
+      <div class="fig" role="listitem"><b>4</b><span>SPE / URTeC papers</span></div>
+      <div class="fig" role="listitem"><b>6</b><span>Countries trained in</span></div>
+    </div>
+    <div class="achv">
+      <article><div class="k">5 MMSCFD + 500 BPD</div><p>Recovered from HRDH-1390 at Haradh GOSP-4 with Saudi Aramco's first ultra-low-pressure wellhead compression system, in sour service.</p></article>
+      <article><div class="k">4,000 BOPD · 3 MMSCFD</div><p>Restored from 15+ ADNOC onshore wells at Bab, Asab and Rumaitha with zero-flaring separation, mobile compression and RTP export.</p></article>
+      <article><div class="k">SAR 5M · USD 2M</div><p>Operations contracts managed for Saudi Aramco and ADNOC, with project budgets up to USD 3.5 million.</p></article>
+      <article><div class="k">&gt; 95% uptime</div><p>Sustained on compression and production equipment through preventive maintenance, spare parts planning and field logistics control.</p></article>
+    </div>
   </div>
 </section>
 
-<div class="grid">
-  <section>
-    <h2>Education &amp; Credentials</h2>
-    <ul>
-      <li>BSc Petroleum &amp; Natural Gas Engineering — Port Said University</li>
-      <li>MBA</li>
-      <li>CMI Level 7, Strategic Management &amp; Leadership Practice — Chartered Manager (CMgr)</li>
-      <li>Postgraduate studies, Oil &amp; Gas Operations Management — UTAMED, Spain (in progress)</li>
-      <li>Registered Engineer — Saudi Council of Engineers</li>
-      <li>Certified Trainer (ToT)</li>
-    </ul>
-  </section>
-  <section>
-    <h2>Publications &amp; Academia</h2>
-    <ul>
-      <li>SPE-217892-MS — Society of Petroleum Engineers</li>
-      <li>SPE-224541-MS — Society of Petroleum Engineers</li>
-      <li>Adjunct Professor, Al Azhar University — Natural Gas Processing &amp; Pipeline Transmission Engineering</li>
-      <li>Member, SPE</li>
-    </ul>
-  </section>
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head"><div class="eyebrow">Career</div><h2>Experience</h2></div>
+    <div class="timeline">
+      <div class="job"><div class="when">Feb 2024 – Present</div><div><h3>Operations Manager – Gas Compression Services</h3><div class="org">Petrogistix Petroleum &amp; Energy Logistics and Services Co. · Al Khobar, Saudi Arabia</div><ul>
+        <li>Leads a 20-person engineering and field organization delivering wellhead compression, well services and temporary production facilities for Saudi Aramco.</li>
+        <li>Engineered and commissioned the HRDH-1390 ultra-low-pressure wellhead compression system at Haradh GOSP-4 (sour service, WHP below 25 psig).</li>
+        <li>Directs pipeline degassing and gas recovery into live networks without routine flaring; owns scope, schedule, budget and a SAR 5 million operations contract.</li></ul></div></div>
+      <div class="job"><div class="when">Sep 2023 – Feb 2024</div><div><h3>Operations Manager – Wellhead Operation Services</h3><div class="org">Petrogistix · Abu Dhabi, UAE</div><ul>
+        <li>Led ADNOC onshore wellhead services and well revival at Bab, Asab and Rumaitha under a USD 2 million contract.</li>
+        <li>Restored 15+ wells to 4,000 BOPD and 3 MMSCFD through integrated separation, mobile compression and RTP tie-ins.</li></ul></div></div>
+      <div class="job"><div class="when">Apr 2021 – Sep 2023</div><div><h3>Senior Petroleum Engineer</h3><div class="org">Petrogistix · Saudi Arabia</div><ul>
+        <li>Engineering, process simulation and commissioning support for compression and temporary production facilities at Haradh, Khurais, Shaybah, Khursaniyah and Harmaliyah.</li>
+        <li>P&amp;IDs, equipment datasheets, hydraulic calculations and commissioning procedures; flow assurance and chemical injection support.</li></ul></div></div>
+      <div class="job"><div class="when">Sep 2018 – Mar 2021</div><div><h3>Senior Production Engineer – Well Intervention Services</h3><div class="org">Wintershall Dea · Egypt</div><ul>
+        <li>Coiled tubing, nitrogen lifting, acid stimulation and rigless intervention on gas and condensate wells; wireline, slickline, perforation, PLT, fishing, recompletion and gravel pack.</li>
+        <li>Flow-to-clean, multirate and buildup testing; well integrity through annulus monitoring, tubing tests and wellhead maintenance.</li></ul></div></div>
+      <div class="job"><div class="when">2014 – 2018</div><div><h3>Natural Gas Process Engineer (Senior Engineer, Operations)</h3><div class="org">SUCO – Suez Oil Company · Egypt</div><ul>
+        <li>Gas receiving, separation, glycol dehydration, refrigeration and low-temperature separation; compression, condensate and LPG handling; plant start-up and troubleshooting.</li></ul></div></div>
+      <div class="job"><div class="when">Sep 2012 – Jun 2014</div><div><h3>Junior Drilling Field Engineer</h3><div class="org">Weatherford Drilling International · Western Desert and Badr El Din, Egypt</div><ul>
+        <li>Rig 797: testing, inspection, maintenance and troubleshooting of drilling tools and downhole equipment.</li></ul></div></div>
+    </div>
+    <div class="side-roles">
+      <div><b>Independent Oil &amp; Gas Training Consultant</b><small>2015 – Present · International</small></div>
+      <div><b>University Lecturer – Natural Gas Processing</b><small>2021 – 2024 · Al-Azhar University, Qena</small></div>
+      <div><b>Technical Consultant (part-time)</b><small>Feb 2023 – Present · Automata Intelligence, UK</small></div>
+      <div><b>Technical Consultant</b><small>Apr 2026 – Present · SQUARE Maintenance Co.</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="expertise">
+  <div class="wrap">
+    <div class="sec-head"><div class="eyebrow">Capabilities</div><h2>Expertise</h2></div>
+    <div class="skills">
+      <div class="skill"><h3>Operations</h3><div class="tags"><span>Operations management</span><span>Contracts &amp; budgets</span><span>Procurement</span><span>Vendor management</span><span>Mobilization</span><span>KPI reporting</span><span>Team leadership</span></div></div>
+      <div class="skill"><h3>Compression &amp; Processing</h3><div class="tags"><span>Reciprocating compressors</span><span>Screw compressors</span><span>Wellhead compression</span><span>Separation</span><span>Glycol dehydration</span><span>LTS</span><span>EPF</span><span>Sour service</span></div></div>
+      <div class="skill"><h3>Wells</h3><div class="tags"><span>Coiled tubing</span><span>Nitrogen lifting</span><span>Stimulation</span><span>Wireline &amp; slickline</span><span>Recompletion</span><span>Sand control</span><span>Well testing</span><span>Well integrity</span></div></div>
+      <div class="skill"><h3>Engineering tools</h3><div class="tags"><span>Aspen HYSYS</span><span>HYSYS Dynamics</span><span>OLGA</span><span>PIPESIM</span><span>Eclipse</span><span>P&amp;IDs</span><span>Datasheets</span><span>Hydraulics</span></div></div>
+      <div class="skill"><h3>HSE &amp; standards</h3><div class="tags"><span>PTW</span><span>SIMOPS</span><span>LOTO</span><span>H2S</span><span>HAZID</span><span>HAZOP</span><span>PSSR</span><span>PSM</span><span>Saudi Aramco SAES/GI</span><span>NACE MR0175 / ISO 15156</span></div></div>
+      <div class="skill"><h3>Flow assurance</h3><div class="tags"><span>Liquid loading</span><span>Surface jet pumps</span><span>Hydrate control</span><span>Chemical injection</span><span>Pipeline degassing</span><span>RTP flowlines</span><span>Zero flaring</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="training">
+  <div class="wrap">
+    <div class="sec-head"><div class="eyebrow">Teaching</div><h2>Training delivery</h2><p class="lead muted">More than 2,000 hours since 2015 for engineers, supervisors, technicians and operators, through PE Academy (Iraq), Zoe Talent Solutions, Pideya Learning Academy and Mercury (UAE), MTC and OGS (Egypt) and EcoMan Training, and for SPE chapters in Egypt, Algeria, Yemen, UAE, Iraq and KSA and AAPG in Iraq and Egypt.</p></div>
+    <div class="train">
+      <div>
+        <h3 style="margin-bottom:10px">Most-delivered programs</h3>
+        <div class="tablebox"><table class="course-table">
+          <thead><tr><th>Program</th><th style="text-align:right">Deliveries</th></tr></thead>
+          <tbody>
+            <tr><td>Natural Gas Processing</td><td class="n">30</td></tr>
+            <tr><td>Workover Technology</td><td class="n">22</td></tr>
+            <tr><td>Oil &amp; Gas Processing Facilities for Operations and Maintenance</td><td class="n">22</td></tr>
+            <tr><td>Workover Fundamentals</td><td class="n">21</td></tr>
+            <tr><td>Well Stimulation and Production Enhancement</td><td class="n">19</td></tr>
+            <tr><td>Fundamentals of Petroleum Engineering</td><td class="n">18</td></tr>
+            <tr><td>Well Completion Engineering</td><td class="n">16</td></tr>
+            <tr><td>Gas Well Performance</td><td class="n">16</td></tr>
+            <tr><td>Oil and Gas Production Technology</td><td class="n">16</td></tr>
+            <tr><td>LPG Technology</td><td class="n">15</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="cats">
+        <div><b>Gas processing &amp; facilities</b><p>Gas conditioning, gas treating and sulfur recovery, troubleshooting gas plants, LNG, LPG and NGL technology, process plant equipment, plant utilities.</p></div>
+        <div><b>Compression &amp; simulation</b><p>Gas compression operations, pumps and compressors, Aspen HYSYS simulation applications in gas processing.</p></div>
+        <div><b>Production &amp; wells</b><p>Production technology, gas well performance, stimulation, artificial lift and ESP technology.</p></div>
+        <div><b>Drilling, completion &amp; intervention</b><p>Drilling practices and fluids, casing and cement design, well completion, sand control, workover, coiled tubing and wireline, wellhead and Christmas tree equipment.</p></div>
+        <div><b>Pipelines, measurement &amp; economics</b><p>Flow assurance, pipeline transmission, pre-commissioning and commissioning, gas gathering, flow metering and custody transfer, downstream economics.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="publications">
+  <div class="wrap">
+    <div class="sec-head"><div class="eyebrow">Research</div><h2>Publications</h2></div>
+    <div class="pubs">
+      <article class="pub"><div class="id">SPE-232033-MS<small>GOTECH Dubai · 2026</small></div><div><h3><a href="https://doi.org/10.2118/232033-MS" target="_blank" rel="noopener">Investigating the Use of Surface Jet Pumps as a Well Revival Technique to Enhance Production in Low-Potential Gas Wells: Operation Case Study</a></h3><p>Amer, E., Ismail, T., Elhusseiny, M.</p></div></article>
+      <article class="pub"><div class="id">SPE-232034-MS<small>GOTECH Dubai · 2026</small></div><div><h3><a href="https://doi.org/10.2118/232034-MS" target="_blank" rel="noopener">Machine Learning Application for Reciprocating Compressor Performance Prediction Under Varying Suction Pressures: A Case Study on Gas Pipeline Pump-Back Operations</a></h3><p>Ismail, T., Amer, E., Elhusseiny, M.</p></div></article>
+      <article class="pub"><div class="id">URTeC-4263581<small>URTeC Houston · 2025</small></div><div><h3><a href="https://doi.org/10.15530/urtec-2025-4263581" target="_blank" rel="noopener">Comparative Analysis of Effective Gas Wells Liquid Loading Mitigation Techniques (Velocity String, MWHC, SJP, Foam Lifting, Cyclic Shut-In, Plunger Lifting)</a></h3><p>Ismail, T., Latrach, A., Elsayed, A.</p></div></article>
+      <article class="pub"><div class="id">SPE-224541-MS<small>GOTECH Dubai · 2025</small></div><div><h3><a href="https://doi.org/10.2118/224541-MS" target="_blank" rel="noopener">Integrating a Mobile Wellhead Compressor (MWHC) with Reinforced Thermoplastic Pipe (RTP) Technology for Zero-Flaring Production in Non-Connected Low Potential Oil Wells: Case Study</a></h3><p>Elsayed, A., Ismail, T., Eladib, A.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="certificates">
+  <div class="wrap">
+    <div class="sec-head"><div class="eyebrow">Evidence</div><h2>Certificates &amp; documents</h2><p class="lead muted">Copies of degrees, registrations, employment letters, training, HSE certifications and memberships. Select any item to view it full size. Originals and attested copies are available on request.</p></div>
+    <div class="filters" id="filters"><input class="search" id="q" type="search" placeholder="Search certificates, issuers or years" aria-label="Search certificates"></div>
+    <div class="count" id="count"></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="sec-head"><div class="eyebrow">Credentials</div><h2>Education &amp; memberships</h2></div>
+    <div class="two">
+      <div class="list">
+        <div><b>B.Sc. Natural Gas Engineering (Credit-Hours System)</b><small>Port Said University, Faculty of Engineering · May 2012 · Very Good, graduation project Excellent</small></div>
+        <div><b>Master of Business Administration (MBA)</b><small>Universidad Tecnológica Atlántico-Mediterráneo (UTAMED), Spain · In progress</small></div>
+        <div><b>CMI Level 7, Strategic Management and Leadership Practice</b><small>Chartered Management Institute, UK · In progress</small></div>
+        <div><b>Professional Carbon Footprint Auditor</b><small>Falcon for Strategic Studies &amp; Human Development · 2026 · 30 certified hours</small></div>
+      </div>
+      <div class="list">
+        <div><b>Saudi Council of Engineers</b><small>Engineer, Petroleum Engineering · No. 851699</small></div>
+        <div><b>Society of Petroleum Engineers (SPE International)</b><small>Member No. 4081183</small></div>
+        <div><b>Egyptian Syndicate of Engineers</b><small>Petroleum and Mining Engineering · since 2012</small></div>
+        <div><b>American Association of Petroleum Geologists</b><small>Division of Environmental Geosciences · 2011</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-band" id="contact">
+  <div class="wrap">
+    <div class="sec-head"><div class="eyebrow">Get in touch</div><h2>Contact</h2></div>
+    <div class="contacts">
+      <div>
+        <div class="crow"><span>Mobile</span><b id="c-phone">+966 540 886 309</b><button class="copy" data-copy="+966540886309">Copy</button></div>
+        <div class="crow"><span>WhatsApp</span><a href="https://wa.me/966540886309" target="_blank" rel="noopener">wa.me/966540886309</a><button class="copy" data-copy="https://wa.me/966540886309">Copy</button></div>
+        <div class="crow"><span>Email</span><b>sayed.amer.add@gmail.com</b><button class="copy" data-copy="sayed.amer.add@gmail.com">Copy</button></div>
+        <div class="crow"><span>LinkedIn</span><a href="https://www.linkedin.com/in/sayed-amer" target="_blank" rel="noopener">linkedin.com/in/sayed-amer</a><button class="copy" data-copy="https://www.linkedin.com/in/sayed-amer">Copy</button></div>
+        <div class="crow"><span>Location</span><b>Dammam / Al Khobar, Saudi Arabia</b><span></span></div>
+      </div>
+      <div class="qrs">
+        <div class="qr"><img src="qr_vcard.png" alt="QR code that saves the contact card">Save contact</div>
+        <div class="qr"><img src="qr_whatsapp.png" alt="QR code for WhatsApp chat">WhatsApp chat</div>
+        <div class="qr"><img src="qr_linkedin.png" alt="QR code for LinkedIn profile">LinkedIn profile</div>
+        <div class="qr"><img src="qr_download.png" alt="QR code to download the portfolio PDF">Download portfolio</div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer><div class="wrap">© 2026 Eng. Elsayed Amer Hassan · Saudi Council of Engineers No. 851699</div></footer>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-labelledby="lb-title">
+  <div class="lb-top"><div><div class="code" id="lb-code"></div><h3 id="lb-title"></h3><p id="lb-sub"></p></div><button class="lb-btn" id="lb-close">Close</button></div>
+  <div class="lb-stage"><button class="lb-btn" id="lb-prev" aria-label="Previous image">‹ Prev</button><img id="lb-img" alt=""><button class="lb-btn" id="lb-next" aria-label="Next image">Next ›</button></div>
+  <div class="lb-foot"><button class="lb-btn" id="lb-prev2">‹</button><span id="lb-pos"></span><button class="lb-btn" id="lb-next2">›</button></div>
 </div>
+<div class="toast" id="toast" hidden></div>
 
-<section style="margin-top:20px">
-  <h2>Training Delivered</h2>
-  <div class="tags">
-    <span class="tag">Gas Compression</span><span class="tag">Natural Gas Processing</span><span class="tag">Pipeline Flow Assurance</span>
-    <span class="tag">Pipeline Pre-commissioning &amp; Commissioning</span><span class="tag">Drilling Operations</span>
-    <span class="tag">Flow Measurement</span><span class="tag">Downstream Economics</span><span class="tag">LNG Technology</span>
-  </div>
-</section>
-</div>
+<script>
+const DATA = {"sections": [{"name": "A. Academic Qualifications", "note": "Degree certificate and full academic transcript."}, {"name": "B. Professional Registration, Work Approvals and Residency", "note": "Engineering registrations in Saudi Arabia and Egypt, Saudi Aramco and ADNOC site access approvals, and residence permits."}, {"name": "C. Employment Evidence", "note": "Employer-issued letters and identification supporting the career history in this profile."}, {"name": "D. Training Delivery, Teaching and Professional Recognition", "note": "Evidence of training delivery, university teaching and professional society recognition."}, {"name": "E. Professional Designations and Trainer Development (2026)", "note": "Recently awarded professional designation and trainer-development programs."}, {"name": "F. Technical Training and Certification", "note": "Process simulation, flow assurance, compression, production, well integrity and well control training."}, {"name": "G. HSE Training and Certification", "note": "Saudi Aramco-approved HSE cards, emergency response, process safety and permit-to-work competency."}, {"name": "H. Professional Memberships", "note": "Society of Petroleum Engineers and AAPG membership records."}, {"name": "I. Early-Career Development", "note": "Early professional development."}], "items": [{"section": "A. Academic Qualifications", "code": "A-01", "imgs": ["grad"], "title": "B.Sc. Natural Gas Engineering (Credit-Hours System) – Graduation Certificate; General Grade: Very Good; Graduation Project: Excellent", "issuer": "Port Said University, Faculty of Engineering", "date": "May 2012"}, {"section": "A. Academic Qualifications", "code": "A-02", "imgs": ["014-024", "014-025"], "title": "Academic Transcript – B.Sc. Natural Gas Engineering Program (2007 – 2012)", "issuer": "Port Said University", "date": "2012"}, {"section": "B. Professional Registration, Work Approvals and Residency", "code": "B-01", "imgs": ["005-006", "005-007"], "title": "Engineer Registration – Petroleum Engineering (Membership No. 851699) – Introduction and Registration Letters", "issuer": "Saudi Council of Engineers (SCE)", "date": "Registered 25 Apr 2022"}, {"section": "B. Professional Registration, Work Approvals and Residency", "code": "B-02", "imgs": ["004-005", "008-014"], "title": "Membership Certificate and Membership Card – Petroleum and Mining Engineering", "issuer": "Egyptian Syndicate of Engineers", "date": "Member since 2012"}, {"section": "B. Professional Registration, Work Approvals and Residency", "code": "B-03", "imgs": ["aramco_id"], "title": "Saudi Aramco Contractor Identification Card – Petrogistix (Front and Back)", "issuer": "Saudi Aramco", "date": "Valid to 05 Mar 2026"}, {"section": "B. Professional Registration, Work Approvals and Residency", "code": "B-04", "imgs": ["006-008", "006-009"], "title": "CICPA Onshore Entry Permit – ADNOC Facilities (Front and Back)", "issuer": "Critical Infrastructure & Coastal Protection Authority (CICPA), UAE", "date": "Issued 21 Oct 2023"}, {"section": "B. Professional Registration, Work Approvals and Residency", "code": "B-05", "imgs": ["iqamas"], "title": "Residence Permits – Kingdom of Saudi Arabia and United Arab Emirates", "issuer": "KSA Ministry of Interior; UAE Federal Authority for Identity and Citizenship", "date": "–"}, {"section": "C. Employment Evidence", "code": "C-01", "imgs": ["pgx2025"], "title": "Employment Letter – Oil & Gas Engineer, employed since 04 Apr 2022 and currently in service", "issuer": "Petrogistix Petroleum & Energy Logistics and Services Co., Saudi Arabia", "date": "26 May 2025"}, {"section": "C. Employment Evidence", "code": "C-02", "imgs": ["disouco_ar", "disouco_en"], "title": "Experience Certificate – Petroleum sector service from 04 Sep 2014, transferred to DISOUCO on 01 Aug 2022; last position Production Process Section Head, General Operations Administration (Arabic and English)", "issuer": "Disouq Petroleum Company (DISOUCO), Egypt", "date": "09 Sep 2026"}, {"section": "C. Employment Evidence", "code": "C-03", "imgs": ["008-012"], "title": "Employee Identification Card – General Department of Operations, Senior Engineer", "issuer": "SUCO – Suez Oil Company, Egypt", "date": "2014 – 2018"}, {"section": "C. Employment Evidence", "code": "C-04", "imgs": ["wft_en"], "title": "Experience Certificate – Junior Drilling Field Engineer, Rig 797, Western Desert and Badr El Din areas (01 Sep 2012 – 09 Jun 2014)", "issuer": "Weatherford Drilling International (BVI) Ltd, Egypt", "date": "16 Jun 2014"}, {"section": "D. Training Delivery, Teaching and Professional Recognition", "code": "D-01", "imgs": ["011-018"], "title": "Certificate of Appreciation – MTC Instructor, Well Completion and Workover Course", "issuer": "EEGS Suez University Student Chapter / MTC", "date": "–"}, {"section": "D. Training Delivery, Teaching and Professional Recognition", "code": "D-02", "imgs": ["011-019"], "title": "Teaching Engagement Letter – Natural Gas Processing Course (Senior Class, B.Sc. Petroleum Engineering)", "issuer": "Al-Azhar University, Faculty of Engineering – Qena, Mining & Petroleum Eng. Dept.", "date": "Academic years 2021 – 2023"}, {"section": "D. Training Delivery, Teaching and Professional Recognition", "code": "D-03", "imgs": ["spe_basra"], "title": "Letter of Appreciation – Support to SPE Basra University Student Chapter", "issuer": "Society of Petroleum Engineers – Basra Section", "date": "09 Sep 2022"}, {"section": "D. Training Delivery, Teaching and Professional Recognition", "code": "D-04", "imgs": ["012-021"], "title": "Certificate of Appreciation – Instructor, Well Completion Workshop (Online Drilling Camp)", "issuer": "IADC Suez University Student Chapter", "date": "30 – 31 Oct 2024"}, {"section": "D. Training Delivery, Teaching and Professional Recognition", "code": "D-05", "imgs": ["basrah"], "title": "Letter of Appreciation – Instructor, Online Course “Well Completion Sequence”", "issuer": "SPE – University of Basrah Student Chapter, Iraq", "date": "26 Jul 2026"}, {"section": "D. Training Delivery, Teaching and Professional Recognition", "code": "D-06", "imgs": ["peacademy"], "title": "Course Completion Certificate issued under the trainer's signature – Piping & Pipelines Engineering (12 training hours); Elsayed Amer Hassan, Trainer of the Course", "issuer": "PE Academy, Iraq", "date": "14 Jun 2026"}, {"section": "D. Training Delivery, Teaching and Professional Recognition", "code": "D-07", "imgs": ["photo1", "photo2"], "title": "Training Delivery – In-House Courses: Liquid and Gas Flow Metering & Custody Transfer Measurement; Downstream Economics Framework", "issuer": "EcoMan Training; Rectus", "date": "2026"}, {"section": "E. Professional Designations and Trainer Development (2026)", "code": "E-01", "imgs": ["carbon_en"], "title": "Professional Carbon Footprint Auditor – Advanced Program in Carbon Footprint Measurement (30 certified hours, S.N. 1FP@F120)", "issuer": "Falcon for Strategic Studies & Human Development", "date": "Aug – Sep 2026"}, {"section": "E. Professional Designations and Trainer Development (2026)", "code": "E-02", "imgs": ["etc1", "etc2"], "title": "Trainer Development: Training Methods (4 h) and Dealing with Trainee Types (4 h)", "issuer": "Egyptian Training Center (ETC)", "date": "07 & 09 Aug 2026"}, {"section": "F. Technical Training and Certification", "code": "F-01", "imgs": ["015-026", "015-027"], "title": "Refinery Process Modelling using Aspen HYSYS and HYSYS Petroleum Refining (2.1 CEU); Advanced Solutions using Aspen HYSYS (1.4 CEU)", "issuer": "AspenTech", "date": "05 – 09 Sep 2021"}, {"section": "F. Technical Training and Certification", "code": "F-02", "imgs": ["017-029"], "title": "Process Simulation using Aspen HYSYS Dynamics V9 (25 hours)", "issuer": "ITS – Information Technology Specialists, Egypt", "date": "04 – 07 Feb 2017"}, {"section": "F. Technical Training and Certification", "code": "F-03", "imgs": ["020-038"], "title": "Basic Process Simulation and Calculation", "issuer": "Oil & Gas Skills (OGS), Alexandria", "date": "14 – 18 Apr 2019"}, {"section": "F. Technical Training and Certification", "code": "F-04", "imgs": ["019-036"], "title": "OLGA Flow Assurance Using Software", "issuer": "OGS / Schlumberger, Cairo", "date": "01 – 05 Dec 2019"}, {"section": "F. Technical Training and Certification", "code": "F-05", "imgs": ["016-028"], "title": "Online Basic Product Training, Edition 2.0 – Reciprocating Gas Compressors", "issuer": "Ariel Corporation", "date": "–"}, {"section": "F. Technical Training and Certification", "code": "F-06", "imgs": ["017-031"], "title": "Advanced Process Plant Operations, Troubleshooting and Special Problems", "issuer": "Oil & Gas Skills (OGS), Cairo", "date": "10 – 14 Apr 2016"}, {"section": "F. Technical Training and Certification", "code": "F-07", "imgs": ["018-033"], "title": "Surface Field Production Engineering", "issuer": "Oil & Gas Skills (OGS), Cairo", "date": "31 Jan – 04 Feb 2016"}, {"section": "F. Technical Training and Certification", "code": "F-08", "imgs": ["018-034"], "title": "Well Integrity (Throughout the Well Life Cycle)", "issuer": "Oil & Gas Skills (OGS), Cairo", "date": "15 – 19 Apr 2018"}, {"section": "F. Technical Training and Certification", "code": "F-09", "imgs": ["019-035"], "title": "Basic of Natural Gas Processing", "issuer": "Oil & Gas Skills (OGS), Cairo", "date": "29 Mar – 02 Apr 2015"}, {"section": "F. Technical Training and Certification", "code": "F-10", "imgs": ["wocrm"], "title": "Well Operations Crew Resource Management (WOCRM) – IWCF LMS Certificate No. WOCR_2255330012024", "issuer": "International Well Control Forum (IWCF)", "date": "Issued 30 Jan 2024"}, {"section": "F. Technical Training and Certification", "code": "F-11", "imgs": ["020-040"], "title": "IWCF Level 1 Programme (LMS Certificate No. KSF6P4N8Wc)", "issuer": "International Well Control Forum (IWCF)", "date": "Issued 30 Jul 2018"}, {"section": "F. Technical Training and Certification", "code": "F-12", "imgs": ["022-043"], "title": "International Education Certificate – Natural Gas Processing Technology", "issuer": "OGS and The Northern Alberta Institute of Technology (NAIT)", "date": "Jul 2011"}, {"section": "F. Technical Training and Certification", "code": "F-13", "imgs": ["021-041"], "title": "Reservoir Simulation Course in Eclipse", "issuer": "Petroleum Horizon Services Company, Port Said", "date": "Apr 2011"}, {"section": "G. HSE Training and Certification", "code": "G-01", "imgs": ["026-049", "026-050", "026-052", "026-048", "026-053", "026-054", "026-051", "026-055", "026-056"], "title": "Saudi Aramco-approved HSE cards: Confined Space Entry; Lock Out / Tag Out; Hazard Recognition; Fall Protection; Basic Rigging and Slinging; Stop Work Authority; High Pressure Equipment Handling; Defensive Driving; Journey Management", "issuer": "Saja Energy Training Center, KSA", "date": "Issued 07 – 09 Aug 2022 | Valid to Aug 2024"}, {"section": "G. HSE Training and Certification", "code": "G-02", "imgs": ["033-073", "033-074"], "title": "H2S & SCBA Awareness (Serial 51095); Fire Fighting & Fire Hose (Serial 51098)", "issuer": "Petroleum & Natural Gas Institute of Technology & Training (PNGIT), KSA", "date": "27 Jun 2024 | Valid to 26 Jun 2026"}, {"section": "G. HSE Training and Certification", "code": "G-03", "imgs": ["033-072"], "title": "Level 2 Award in Emergency Response", "issuer": "AOSH Awarding Body (UK), with PNGIT", "date": "Jul 2024"}, {"section": "G. HSE Training and Certification", "code": "G-04", "imgs": ["034-075", "034-076"], "title": "Heart Saver First Aid; HSFA CPR AED Life Support Training", "issuer": "Saudi Heart Association", "date": "27 Jun 2024 | Valid to 27 Jun 2026"}, {"section": "G. HSE Training and Certification", "code": "G-05", "imgs": ["028-060"], "title": "Process Safety Management (PSM)", "issuer": "Oil & Gas Skills (OGS), Alexandria", "date": "24 – 28 Jun 2018"}, {"section": "G. HSE Training and Certification", "code": "G-06", "imgs": ["028-062", "029-064"], "title": "Hazard Identification; Risk Assessment", "issuer": "Oil & Gas Skills (OGS), Online", "date": "15 – 19 Aug 2021"}, {"section": "G. HSE Training and Certification", "code": "G-07", "imgs": ["029-063", "030-066"], "title": "Safety & Environment Management System; Crisis Management & Emergency Response Plan", "issuer": "Oil & Gas Skills (OGS), Online", "date": "12 – 16 Sep 2021"}, {"section": "G. HSE Training and Certification", "code": "G-08", "imgs": ["030-065", "031-067"], "title": "Behaviour Based Safety; Incident Investigation & Root Cause Analysis (RCA)", "issuer": "Oil & Gas Skills (OGS), Online", "date": "29 Aug – 02 Sep 2021"}, {"section": "G. HSE Training and Certification", "code": "G-09", "imgs": ["031-068"], "title": "Certificate of Competency – Permit to Work: Permit Applicant / Area Authority", "issuer": "Disouq Petroleum Company (DISOUCO), Egypt", "date": "Valid until May 2016"}, {"section": "H. Professional Memberships", "code": "H-01", "imgs": ["036-079"], "title": "SPE Professional Membership Card – Member No. 4081183", "issuer": "Society of Petroleum Engineers (SPE International)", "date": "Member since 2024"}, {"section": "H. Professional Memberships", "code": "H-02", "imgs": ["spe_cert2024"], "title": "SPE Membership Certificate", "issuer": "Society of Petroleum Engineers (SPE International)", "date": "Joined 2024"}, {"section": "H. Professional Memberships", "code": "H-03", "imgs": ["037-081", "037-082"], "title": "Membership Letter and Certificate – Division of Environmental Geosciences", "issuer": "American Association of Petroleum Geologists (AAPG)", "date": "Apr – May 2011"}, {"section": "I. Early-Career Development", "code": "I-01", "imgs": ["023-044", "024-045"], "title": "Certified International Employee (CIE), Grade Excellent; General English – Intermediate Stage, Grade Excellent", "issuer": "Harvard International Training Britain; The American International Academy", "date": "May 2011; May 2012"}]};
+const grid = document.getElementById('grid'), filters = document.getElementById('filters'), q = document.getElementById('q'), countEl = document.getElementById('count');
+let active = 'all';
+const short = s => s.replace(/^[A-I]\.\s*/, '');
+function chip(label, key){ const b=document.createElement('button'); b.className='chip'; b.type='button'; b.textContent=label; b.setAttribute('aria-pressed', key===active); b.onclick=()=>{active=key; [...filters.querySelectorAll('.chip')].forEach(c=>c.setAttribute('aria-pressed', c===b)); render();}; filters.insertBefore(b,q); }
+chip('All', 'all');
+DATA.sections.forEach(s => chip(short(s.name).replace(' and Trainer Development (2026)','').replace(', Work Approvals and Residency',' & Approvals').replace(', Teaching and Professional Recognition',' & Teaching'), s.name));
+function render(){
+  const term = q.value.trim().toLowerCase(); grid.innerHTML=''; let n=0;
+  DATA.sections.forEach(s => {
+    if(active!=='all' && active!==s.name) return;
+    const items = DATA.items.filter(e => e.section===s.name && (!term || (e.code+' '+e.title+' '+e.issuer+' '+e.date).toLowerCase().includes(term)));
+    if(!items.length) return;
+    const h=document.createElement('div'); h.className='group-title'; h.innerHTML=short(s.name)+'<small>'+s.note+'</small>'; grid.appendChild(h);
+    items.forEach(e => { n++;
+      const c=document.createElement('button'); c.className='card'; c.type='button'; c.setAttribute('aria-label', e.code+' '+e.title);
+      c.innerHTML='<div class="thumb"><img loading="lazy" src="t_'+e.imgs[0]+'.jpg" alt="">'+(e.imgs.length>1?'<span class="multi">'+e.imgs.length+' pages</span>':'')+'</div><div class="meta"><div class="code">'+e.code+' · '+e.date+'</div><div class="t"></div><div class="i"></div></div>';
+      c.querySelector('.t').textContent=e.title; c.querySelector('.i').textContent=e.issuer;
+      c.onclick=()=>openLb(e,0); grid.appendChild(c); });
+  });
+  countEl.textContent = n + (n===1?' document':' documents') + (term||active!=='all' ? ' shown' : ' in total');
+}
+q.addEventListener('input', render); render();
+
+const lb=document.getElementById('lb'), lbImg=document.getElementById('lb-img'); let cur=null, idx=0, lastFocus=null;
+function show(){ lbImg.src='c_'+cur.imgs[idx]+'.jpg'; lbImg.alt=cur.title+' – page '+(idx+1);
+  document.getElementById('lb-code').textContent=cur.code+' · '+cur.date; document.getElementById('lb-title').textContent=cur.title;
+  document.getElementById('lb-sub').textContent=cur.issuer; document.getElementById('lb-pos').textContent=(idx+1)+' / '+cur.imgs.length;
+  const multi=cur.imgs.length>1; ['lb-prev','lb-next','lb-prev2','lb-next2'].forEach(id=>document.getElementById(id).hidden=!multi); }
+function openLb(e,i){ lastFocus=document.activeElement; cur=e; idx=i; show(); lb.hidden=false; document.body.style.overflow='hidden'; document.getElementById('lb-close').focus(); }
+function closeLb(){ lb.hidden=true; document.body.style.overflow=''; if(lastFocus) lastFocus.focus(); }
+function step(d){ if(!cur) return; idx=(idx+d+cur.imgs.length)%cur.imgs.length; show(); }
+document.getElementById('lb-close').onclick=closeLb;
+['lb-prev','lb-prev2'].forEach(id=>document.getElementById(id).onclick=()=>step(-1));
+['lb-next','lb-next2'].forEach(id=>document.getElementById(id).onclick=()=>step(1));
+lb.addEventListener('click', ev=>{ if(ev.target===lb || ev.target.classList.contains('lb-stage')) closeLb(); });
+document.addEventListener('keydown', ev=>{ if(lb.hidden) return; if(ev.key==='Escape') closeLb(); if(ev.key==='ArrowRight') step(1); if(ev.key==='ArrowLeft') step(-1); });
+
+const toast=document.getElementById('toast'); let tt;
+function say(m){ toast.textContent=m; toast.hidden=false; clearTimeout(tt); tt=setTimeout(()=>toast.hidden=true,1800); }
+document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',()=>{ const v=b.dataset.copy;
+  const fallback=()=>{ const r=document.createRange(); r.selectNodeContents(b.previousElementSibling); const s=getSelection(); s.removeAllRanges(); s.addRange(r); say('Selected – press Ctrl+C to copy'); };
+  try{ navigator.clipboard.writeText(v).then(()=>say('Copied'), fallback); }catch(e){ fallback(); } }));
+</script>
+
 </body>
 </html>
